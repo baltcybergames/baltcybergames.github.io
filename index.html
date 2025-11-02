@@ -1,38 +1,213 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>The Baltimore Cyber Games</title>
-</head>
-<body>
-    <div id="welcome">
-        <h1>The Baltimore Cyber Games</h1>
-        <p>Thank you to everyone who participated in The Cyber Games 2025 on February 22nd at Dumbarton Middle School! We hope that you all had a great time and learned more about cybersecurity and technology. More information about the Cyber Games 2026 will be available in the coming months.</p>
-        <p><b>What is the Cyber Games?</b> The Cyber Games is an annual competition for Baltimore County public middle school students hosted at Dumbarton Middle School. At the Cyber Games, students learn cybersecurity and technology skills, all while competition in a fun, beginner-friendly competition with their friends. They also have the opportunity to hear from real technology professionals and high school technology clubs. Students also have the opportunity to win prizes donated by our awesome sponsors.</p>
-        <p><b>Who organizes the Cyber Games?</b> The Cyber Games is organized by a group of high school students from Eastern Technical High School, Towson High School, and the George Washington Carver Center for Arts and Technology, and a teacher at Dumbarton Middle School.</p>
-        <p><b>Why should I compete in the Cyber Games?</b> Competing lets you learn about fields (technology and cybersecurity) with almost limitless opportunities, meet and hear from professionals in those fields, learn valuable real-life skills in a fun way, compete and have fun with your friends, and win gift cards and prizes.</p>
-    </div>
-    <div id="instagram">
-        <h2>Follow us on Instagram: @the.cyber.games</h2>
-        <p>Get updates on everything Cyber Games and learn more about cybersecurity!</p>
-        <button><a href="https://www.instagram.com/the.cyber.games">Follow Us!</a></button>
-    </div>
-    <div id="photos">
-        <h2>Photo Gallery</h2>
-        <p>Do you want to see photos from previous Cyber Games?</p>
-        <p>Click the button below to view them. You must open the folder with your BCPS account.</p>
-        <p>Please email us if you would like to contribute photos or have a photo removed.</p>
-    </div>
-    <div id="footer">
-        <p>Questions? Contact our Program Director, Saan Rhyne: <a href="mailto:contact@saanrhyne.com">contact@saanrhyne.com</a></p>
-    </div>
-</body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Baltimore Cyber Games</title>
+  <style>
 
-<style>
+    /* colors: #1b3b6f, #274c8e, #ffd700, #f7f8fa, #222222 */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-        font-family: sans-serif;
-        text-align: center;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: #222222;
+      background-color: #f7f8fa;
+      overflow-x: hidden;
     }
 
-    #photos {
-        background-color: blue;
+    h1, h2, h3 {
+      color: #1b3b6f;
+      font-weight: 700;
     }
-</style>
+
+    a {
+      text-decoration: none;
+      color: #1b3b6f;
+    }
+
+    #welcome {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: #1b3b6f;
+      color: white;
+      padding: 40px 10%;
+      text-align: center;
+      position: relative;
+    }
+
+    #welcome img {
+      width: 100px;
+    height: auto;
+    }
+
+    #welcome h1 {
+      font-size: 3rem;
+      color: #f7f8fa;
+      margin: 0;
+    }
+
+
+    #info {
+      background-color: white;
+      padding: 80px 10%;
+      text-align: left;
+    }
+
+    #info p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    #info b {
+      color: #1b3b6f;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 90%;
+      margin: 60px auto;
+      gap: 2%;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 1 1 30%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 40px 5%;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature h2 {
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .feature a {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #1b3b6f;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .feature a:hover {
+      background-color: #274c8e;
+    }
+
+    footer {
+      background-color: #1b3b6f;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #ffd700;
+    }
+
+    @media (max-width: 900px) {
+      #welcome {
+        padding: 80px 5%;
+      }
+
+      #welcome h1 {
+        font-size: 2.4rem;
+      }
+
+      .features {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .feature {
+        margin-bottom: 25px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="welcome">
+    <img src="/logo.png" alt="Cyber Games Logo" />
+    <h1>The Baltimore Cyber Games</h1>
+  </section>
+
+  <section id="info">
+    <p>
+      <b>What is The Cyber Games?</b><br>
+      The Cyber Games is an annual competition for Baltimore County public middle school students hosted at Dumbarton Middle School. 
+      At the Cyber Games, students learn cybersecurity and technology skills while competing in a fun, beginner-friendly event with friends.
+      They also have the opportunity to hear from technology professionals, meet high school technology clubs, and win prizes donated by our sponsors.
+    </p>
+
+    <p>
+      <b>Who organizes The Cyber Games?</b><br>
+      The event is organized by high school students from Eastern Technical High School, Towson High School, 
+      and the George Washington Carver Center for Arts and Technology, alongside a teacher advisor from Dumbarton Middle School.
+    </p>
+
+    <p>
+      <b>Why compete?</b><br>
+      Competing lets you explore the exciting world of technology and cybersecurity, meet professionals in the field, 
+      gain valuable real-life skills in a fun way, and win awesome prizes — all while working with your friends!
+    </p>
+  </section>
+
+  <div class="features">
+    <div class="feature">
+      <h2>📸 Follow Us on Instagram</h2>
+      <p>Get updates on everything Cyber Games and learn more about cybersecurity!</p>
+      <a href="https://www.instagram.com/the.cyber.games" target="_blank">Follow Us</a>
+    </div>
+
+    <div class="feature">
+      <h2>🖥️ Register for 2026</h2>
+      <p>Registration opens January 2026 — don’t worry, spots are unlimited!</p>
+      <a href="#" target="_blank">Coming Soon</a>
+    </div>
+
+    <div class="feature">
+      <h2>📷 Photo Gallery</h2>
+      <p>Check out photos from past Cyber Games! (BCPS account required)</p>
+      <a href="https://drive.google.com/drive/folders/1KiQh1SRDmU5GpOFDxf3zHWoDnKNOanF4?usp=drive_link" target="_blank">View Photos</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Questions? Contact our Program Director, Saan Rhyne:
+      <a href="mailto:contact@saanrhyne.com">contact@saanrhyne.com</a>
+    </p>
+  </footer>
+</body>
+</html>
