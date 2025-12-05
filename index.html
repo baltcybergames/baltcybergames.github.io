@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+      <!-- I assume you are here to check the source code, as you suspect the site is vibe-coded.
+       You would be correct in that assumption.
+       While we could spend hours making a website from scratch, that would take away from the time we have.
+       To make this event happen, we must create challenges, advertise, ask businesses for donations, and do a lot more behind the scenes work.
+       For this simple site, it was just easier to make it in 2 minutes as opposed to 3-4 hours. Thanks for understanding! -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -123,6 +128,75 @@
       background-color: #274c8e;
     }
 
+    #prizes {
+      background-color: white;
+      padding: 60px 10%;
+    }
+    
+    .prize-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .prize-photo {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .prize-list {
+      width: 45%;
+    }
+    
+    .prize-list h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #1b3b6f;
+    }
+    
+    .prize-list ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .prize-list p {
+      padding-left: 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+    
+    .prize-list li::before {
+      content: "✔ ";
+      color: #1b3b6f;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 900px) {
+      .prize-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+    .prize-photo,
+    .prize-list {
+        width: 100%;
+      }
+    
+    .prize-list ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 300px;
+      }
+    }
+
+
     footer {
       background-color: #1b3b6f;
       color: white;
@@ -181,6 +255,22 @@
       Competing lets you explore the exciting world of technology and cybersecurity, meet fellow students interested in tech, 
       gain valuable real-life skills in a fun way, and win awesome prizes. Plus, you get to do it all while working with your friends!
     </p>
+  </section>
+
+  <section id="prizes">
+  <div class="prize-container">
+    <img src="/prizes.png" alt="Cyber Games Prizes" class="prize-photo">
+
+    <div class="prize-list">
+      <h2>2026 Prizes</h2>
+      <ul>
+        <li>Raising Cane's Towson - Gift Basket & Meal Vouchers</li>
+        <li>Chick-fil-A Towson Place - Meal Vouchers</li>
+        <li>And more!</li>
+      </ul>
+      <br><p>Interested in donating prizes? Please contact us: <a href="mailto:contact@baltimorecybergames.com">contact@baltcybergames.com</a></p>
+    </div>
+  </div>
   </section>
 
   <div class="features">
