@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-      <!-- I assume you are here to check the source code, as you suspect the site is vibe-coded.
-       You would be correct in that assumption.
-       While we could spend hours making a website from scratch, that would take away from the time we have.
-       To make this event happen, we must create challenges, advertise, ask businesses for donations, and do a lot more behind the scenes work.
-       For this simple site, it was just easier to make it in 2 minutes as opposed to 3-4 hours. Thanks for understanding! -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -127,6 +122,55 @@
     .feature a:hover {
       background-color: #274c8e;
     }
+
+    #agenda {
+  background-color: #f7f8fa;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+#agenda h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.agenda-time {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.agenda-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+.agenda-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1.05rem;
+}
+
+.agenda-list span {
+  font-weight: 600;
+  color: #1b3b6f;
+}
+
+@media (max-width: 600px) {
+  .agenda-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
 
     #prizes {
       background-color: white;
@@ -277,6 +321,23 @@
       <a href="https://drive.google.com/drive/folders/1KiQh1SRDmU5GpOFDxf3zHWoDnKNOanF4?usp=drive_link" target="_blank">View Photos</a>
     </div>
   </div>
+      
+      <section id="agenda">
+        <h2>Event Agenda</h2>
+        <p class="agenda-time">12:00 PM – 3:00 PM</p>
+      
+        <ul class="agenda-list">
+          <li><span>12:00 PM</span> Check-In</li>
+          <li><span>12:15 PM</span> Welcome</li>
+          <li><span>12:30 PM</span> CTF Demo</li>
+          <li><span>1:00 PM</span> Competition Begins</li>
+          <li><span>1:30 PM</span> Eastern Tech Cyber Demo & Talk</li>
+          <li><span>2:00 PM</span> Towson High Robotics Demo & Talk</li>
+          <li><span>2:30 PM</span> Competition Ends</li>
+          <li><span>2:45 PM</span> Closing & Winners Announced</li>
+          <li><span>3:00 PM</span> Event Ends</li>
+        </ul>
+      </section>
       
   <section id="prizes">
   <div class="prize-container">
