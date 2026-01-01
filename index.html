@@ -123,129 +123,16 @@
       background-color: #274c8e;
     }
 
-    #agenda {
-  background-color: #f7f8fa;
-  padding: 60px 10%;
-  text-align: center;
-}
-
-#agenda h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.agenda-time {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.agenda-list {
-  list-style: none;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: left;
-}
-
-.agenda-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 18px;
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-size: 1.05rem;
-}
-
-.agenda-list span {
-  font-weight: 600;
-  color: #1b3b6f;
-}
-
-@media (max-width: 600px) {
-  .agenda-list li {
-    flex-direction: column;
-    gap: 4px;
-  }
-}
-
-
-    #prizes {
-      background-color: white;
-      padding: 60px 10%;
-    }
-    
-    .prize-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    
-    .prize-photo {
-      max-width: 45%;
-      max-height: 15%;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    .prize-list {
-      width: 45%;
-    }
-    
-    .prize-list h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #1b3b6f;
-    }
-    
-    .prize-list ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #333;
-    }
-
-    .prize-list p {
-      padding-left: 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #333;
-    }
-    
-    .prize-list li::before {
-      content: "✔ ";
-      color: #1b3b6f;
-      font-weight: bold;
-    }
-    
-    @media (max-width: 900px) {
-      .prize-container {
-        flex-direction: column;
-        text-align: center;
-      }
-    
-    .prize-photo,
-    .prize-list {
-        width: 100%;
-      }
-    
-    .prize-list ul {
-        text-align: left;
-        margin: 0 auto;
-        max-width: 300px;
-      }
-    }
 
     #agenda-prizes {
   display: flex;
   gap: 6%;
   padding: 60px 10%;
   background-color: white;
+}
+
+#agenda-prizes h2 {
+    font-size: 2rem;
 }
 
 .agenda-column {
@@ -285,11 +172,12 @@
 
 .prize-photo {
   width: 100%;
-  max-width: 350px;
+  max-width: 600px;
   border-radius: 10px;
   margin-bottom: 25px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
 
 .prize-list {
   list-style: none;
@@ -425,11 +313,14 @@
   </div>
 
   <div class="prize-column">
+    <br>
+    <br>
     <img src="/prizes.png" alt="Cyber Games Prizes" class="prize-photo">
 
     <h2>2026 Prizes</h2>
 
     <ul class="prize-list">
+       <br>
       <li>Raising Cane's Towson – Gift Basket & Meals</li>
       <li>Chick-fil-A Towson Place – Meal Vouchers</li>
       <li>And more!</li>
