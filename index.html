@@ -241,6 +241,90 @@
       }
     }
 
+    #agenda-prizes {
+  display: flex;
+  gap: 6%;
+  padding: 60px 10%;
+  background-color: white;
+}
+
+.agenda-column {
+  width: 50%;
+}
+
+.agenda-time {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.agenda-list {
+  list-style: none;
+  padding: 0;
+}
+
+.agenda-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f8fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.agenda-list span {
+  font-weight: 600;
+  color: #1b3b6f;
+}
+
+.prize-column {
+  width: 50%;
+  text-align: center;
+}
+
+.prize-photo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.prize-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.prize-list li::before {
+  content: "✔ ";
+  color: #1b3b6f;
+  font-weight: bold;
+}
+
+.donate-text {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  #agenda-prizes {
+    flex-direction: column;
+  }
+
+  .agenda-column,
+  .prize-column {
+    width: 100%;
+  }
+
+  .agenda-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
 
     footer {
       background-color: #1b3b6f;
@@ -322,38 +406,42 @@
     </div>
   </div>
       
-      <section id="agenda">
-        <h2>Event Agenda</h2>
-        <p class="agenda-time">12:00 PM – 3:00 PM</p>
-      
-        <ul class="agenda-list">
-          <li><span>12:00 PM</span> Check-In</li>
-          <li><span>12:15 PM</span> Welcome</li>
-          <li><span>12:30 PM</span> CTF Demo</li>
-          <li><span>1:00 PM</span> Competition Begins</li>
-          <li><span>1:30 PM</span> Eastern Tech Cyber Demo & Talk</li>
-          <li><span>2:00 PM</span> Towson High Robotics Demo & Talk</li>
-          <li><span>2:30 PM</span> Competition Ends</li>
-          <li><span>2:45 PM</span> Closing & Winners Announced</li>
-          <li><span>3:00 PM</span> Event Ends</li>
-        </ul>
-      </section>
-      
-  <section id="prizes">
-  <div class="prize-container">
+  <section id="agenda-prizes">
+  <div class="agenda-column">
+    <h2>Event Agenda</h2>
+    <p class="agenda-time">12:00 PM – 3:00 PM</p>
+
+    <ul class="agenda-list">
+      <li><span>12:00 PM</span> Check-In</li>
+      <li><span>12:15 PM</span> Welcome</li>
+      <li><span>12:30 PM</span> CTF Demo</li>
+      <li><span>1:00 PM</span> Competition Begins</li>
+      <li><span>1:30 PM</span> Eastern Tech Cyber Demo</li>
+      <li><span>2:00 PM</span> Towson Robotics Demo</li>
+      <li><span>2:30 PM</span> Competition Ends</li>
+      <li><span>2:45 PM</span> Winners Announced</li>
+      <li><span>3:00 PM</span> Event Ends</li>
+    </ul>
+  </div>
+
+  <div class="prize-column">
     <img src="/prizes.png" alt="Cyber Games Prizes" class="prize-photo">
 
-    <div class="prize-list">
-      <h2>2026 Prizes</h2>
-      <ul>
-        <li>Raising Cane's Towson - Gift Basket & Meal Vouchers</li>
-        <li>Chick-fil-A Towson Place - Meal Vouchers</li>
-        <li>And more!</li>
-      </ul>
-      <br><p>Interested in donating prizes? Please contact us: <a href="mailto:contact@baltimorecybergames.com">contact@baltcybergames.com</a></p>
-    </div>
+    <h2>2026 Prizes</h2>
+
+    <ul class="prize-list">
+      <li>Raising Cane's Towson – Gift Basket & Meals</li>
+      <li>Chick-fil-A Towson Place – Meal Vouchers</li>
+      <li>And more!</li>
+    </ul>
+
+    <p class="donate-text">
+      Interested in donating prizes?<br>
+      <a href="mailto:contact@baltcybergames.com">contact@baltcybergames.com</a>
+    </p>
   </div>
-  </section>
+</section>
+
 
   <footer>
     <p>
